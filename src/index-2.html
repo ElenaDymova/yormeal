@@ -12,8 +12,10 @@
   <body class="font-nunito bg-popupColor">
 
     <!---------- header main desc ------------>
-    <header class="text-center md:text-left bg-bgColor">
-      <div class="px-2.5 pt-3.5 md:px-24 lg:px-32">
+    <header class="bg-[url('img/ellipse-bg.svg')] bg-subtract bg-cover bg-center text-center md:text-left pt-3.5">
+      <!-- <header class="text-center md:text-left relative">
+        <img src="img/subtract.svg" alt="" class="absolute"> -->
+      <div class="px-2.5 md:px-24 lg:px-32">
         <img src="img/logo-white.svg" class="w-150 h-29 mx-auto block" alt="">
         <div class="mt-6 md:flex md:gap-x-2.5 md:items-center md:justify-center md:w-[562px] md:mx-auto lg:w-[764px] lg:gap-0">
           <div class="md:order-2">
@@ -24,7 +26,7 @@
         </div>
       </div>
     </header>
-    
+
     <nav class="px-2.5 mt-8 md:px-16 lg:mt-10 lg:px-8 flex items-baseline flex-wrap justify-between">
       <!---------- tabs menu ------------>
       <ul class="flex overflow-x-auto whitespace-nowrap gap-2 md:mb-8 lg:gap-6">
@@ -110,8 +112,8 @@
       </div>
     </section>
 
-     <!---------- footer ------------>
-     <footer class="bg-white mt-20 lg:mt-24">
+    <!---------- footer ------------>
+    <footer class="bg-white mt-20 lg:mt-24">
       <div class="px-2.5 md:px-16 py-6 md:py-10 lg:px-8 lg:flex lg:flex-wrap lg:justify-between">
         <img class="lg:w-[300px]" src="/img/logo.svg" alt="">
         <div class="md:grid md:grid-cols-2 lg:gap-12">
@@ -137,6 +139,37 @@
         <p class="mt-6 text-xs lg:w-full">© YouMeal, 2022</p>
       </div>
     </footer>
+
+
+
+    <div class="relative h-screen overflow-hidden">
+      <!-- Скрытый круг, частично видимый -->
+      <div class="absolute top-[-150px] left-1/2 transform -translate-x-1/2 -translate-y-1/4 bg-red-500 rounded-full h-[650px] w-[650px] opacity-50"></div>
+
+      <div class="px-2.5 md:px-24 lg:px-32">
+        <img src="img/logo-white.svg" class="w-150 h-29 mx-auto block" alt="">
+        <div class="mt-6 md:flex md:gap-x-2.5 md:items-center md:justify-center md:w-[562px] md:mx-auto lg:w-[764px] lg:gap-0">
+          <div class="md:order-2">
+            <h1 class="text-white font-extrabold text-3xl md:text-4xl lg:text-5xl">Только самые<br><span class="text-btnAccenrtColor">сочные бургеры!</span></h1>
+            <p class="text-white font-regular mt-4 text-xs md:mt-7 lg:text-base lg:mt-12">Бесплатная доставка от <span class="font-extrabold">599₽</span></p>
+          </div>  
+          <img src="img/burger-main.svg" class="mx-auto block mt-5 md:mt-0 md:order-1 lg:m-0" alt="">
+        </div>
+      </div>
+      
+      <!-- Ваш раздел с контентом -->
+      <!-- <div class="bg-white p-8">
+        Заголовок -->
+        <!-- <h1 class="text-3xl font-bold mb-4">Пример контента</h1>
+        Параграфы -->
+        <!-- <p class="mb-4">Этот раздел содержит пример контента, который будет располагаться поверх фона.</p>
+        <p class="mb-4">Контент может включать в себя текст, изображения, ссылки и другие элементы HTML.</p>
+        Кнопка -->
+        <!-- <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Нажми меня</button>
+      </div> -->
+    </div>
+    
+    
   </body>
   <script type="module" src="/main.js"></script>
 </html>
