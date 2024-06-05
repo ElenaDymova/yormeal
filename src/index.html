@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/icons/burger.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Доставка бургеров YourMeal</title>
+  </head>
+  <body class="font-nunito bg-popupColor">
+
+    <!---------- header main desc ------------>
+    <header class="bg-[url('img/ellipse-bg.svg')] bg-subtract bg-cover bg-center text-center md:text-left pt-3.5">
+      <!-- <header class="text-center md:text-left relative">
+        <img src="img/subtract.svg" alt="" class="absolute"> -->
+      <div class="px-2.5 md:px-24 lg:px-32">
+        <img src="img/logo-white.svg" class="w-150 h-29 mx-auto block" alt="">
+        <div class="mt-6 md:flex md:gap-x-2.5 md:items-center md:justify-center md:w-[562px] md:mx-auto lg:w-[764px] lg:gap-0">
+          <div class="md:order-2">
+            <h1 class="text-white font-extrabold text-3xl md:text-4xl lg:text-5xl">Только самые<br><span class="text-btnAccenrtColor">сочные бургеры!</span></h1>
+            <p class="text-white font-regular mt-4 text-xs md:mt-7 lg:text-base lg:mt-12">Бесплатная доставка от <span class="font-extrabold">599₽</span></p>
+          </div>  
+          <img src="img/burger-main.svg" class="mx-auto block mt-5 md:mt-0 md:order-1 lg:m-0" alt="">
+        </div>
+      </div>
+    </header>
+
+    <nav class="px-2.5 mt-8 md:px-16 lg:mt-10 lg:px-8 flex items-baseline flex-wrap justify-between">
+      <!---------- tabs menu ------------>
+      <ul class="flex overflow-x-auto whitespace-nowrap gap-2 md:mb-8 lg:gap-6">
+        <li class="relative">
+          <a class="text-xs inline-block pl-10 pt-2 pb-2 pr-2.5 bg-bgColor rounded-custom active:bg-bgColor hover:border-btnAccenrtColor border border-transparent">Бургеры</a>
+          <img class="absolute top-1/2 transform -translate-y-1/2 left-2" src="img/icons/burger.svg" alt="">
+        </li>
+        <li class="relative">
+          <a class="text-xs inline-block pl-10 pt-2 pb-2 pr-2.5 bg-white rounded-custom active:bg-bgColor hover:border-btnAccenrtColor border border-transparent">Закуски</a>
+          <img class="absolute top-1/2 transform -translate-y-1/2 left-2" src="img/icons/snack.svg" alt="">
+        </li>
+        <li class="relative">
+          <a class="text-xs inline-block pl-10 pt-2 pb-2 pr-2.5 bg-white rounded-custom active:bg-bgColor hover:border-btnAccenrtColor border border-transparent">Хот-доги</a>
+          <img class="absolute top-1/2 transform -translate-y-1/2 left-2" src="img/icons/hot-dog.svg" alt="">
+        </li>
+        <li class="relative">
+          <a class="text-xs inline-block pl-10 pt-2 pb-2 pr-2.5 bg-white rounded-custom active:bg-bgColor hover:border-btnAccenrtColor border border-transparent">Шаурма</a>
+          <img class="absolute top-1/2 transform -translate-y-1/2 left-2" src="img/icons/shaverma.svg" alt="">
+        </li>
+        <li class="relative">
+          <a class="text-xs inline-block pl-10 pt-2 pb-2 pr-2.5 bg-white rounded-custom active:bg-bgColor hover:border-btnAccenrtColor border border-transparent">Пицца</a>
+          <img class="absolute top-1/2 transform -translate-y-1/2 left-2" src="img/icons/pizza.svg" alt="">
+        </li>
+        <li class="relative mr-2">
+          <a class="text-xs inline-block pl-10 pt-2 pb-2 pr-2.5 bg-white rounded-custom active:bg-bgColor hover:border-btnAccenrtColor border border-transparent">Вок</a>
+          <img class="absolute top-1/2 transform -translate-y-1/2 left-2" src="img/icons/wok.svg" alt="">
+        </li>
+      </ul>
+
+      <!---------- basket ------------>
+      <button class="mt-8 w-full md:w-[145px] md:mt-0 bg-white rounded-xl flex justify-center justify-between px-2.5 py-4 md:w-[145px]">
+        <div class="font-semibold">Корзина</div>
+        <div class="px-3.5 bg-btnColor rounded-md font-regular text-xs pt-1">0</div>
+      </button>
+    </nav>
+
+    <!---------- products ------------>
+    <section class="px-2.5 mt-8 md:px-16 lg:mt-12 lg:px-8">
+      <h2 class="text-3xl font-semibold lg:text-5xl">Бургеры</h2>
+      <div class="mt-4 lg:mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-3 gap-2.5 md:gap-5 lg:gap-7">
+        <div class="bg-white rounded-xl lg:rounded-2xl p-1 lg:p-3">
+          <img class="w-full h-auto" src="/img/product/burger-classik.jpg" alt="">
+          <p class="font-semibold mt-2.5 lg:mt-4 lg:text-2xl">689₽</p>
+          <h3 class="text-xs mt-1 lg:mt-2 lg:text-base">Мясная бомба</h3>
+          <p class="text-xs lg:text-base font-semibold text-greyColor mt-4 lg:mt-7">520г</p>
+          <button class="text-xs lg:text-base w-full py-2.5 lg:py-3 rounded-lg my-2 bg-btnColor hover:bg-bgColor active:bg-btnAccenrtColor focus:border-btnColor">Добавить</button>
+        </div>
+        <div class="bg-white rounded-xl lg:rounded-2xl p-1 lg:p-3">
+          <img class="w-full h-auto" src="/img/product/burger-classik.jpg" alt="">
+          <p class="font-semibold mt-2.5 lg:mt-4 lg:text-2xl">689₽</p>
+          <h3 class="text-xs mt-1 lg:mt-2 lg:text-base">Мясная бомба</h3>
+          <p class="text-xs lg:text-base font-semibold text-greyColor mt-4 lg:mt-7">520г</p>
+          <button class="text-xs lg:text-base w-full py-2.5 lg:py-3 rounded-lg my-2 bg-btnColor hover:bg-bgColor active:bg-btnAccenrtColor focus:border-btnColor">Добавить</button>
+        </div>
+        <div class="bg-white rounded-xl lg:rounded-2xl p-1 lg:p-3">
+          <img class="w-full h-auto" src="/img/product/burger-classik.jpg" alt="">
+          <p class="font-semibold mt-2.5 lg:mt-4 lg:text-2xl">689₽</p>
+          <h3 class="text-xs mt-1 lg:mt-2 lg:text-base">Мясная бомба</h3>
+          <p class="text-xs lg:text-base font-semibold text-greyColor mt-4 lg:mt-7">520г</p>
+          <button class="text-xs lg:text-base w-full py-2.5 lg:py-3 rounded-lg my-2 bg-btnColor hover:bg-bgColor active:bg-btnAccenrtColor focus:border-btnColor">Добавить</button>
+        </div>
+        <div class="bg-white rounded-xl lg:rounded-2xl p-1 lg:p-3">
+          <img class="w-full h-auto" src="/img/product/burger-classik.jpg" alt="">
+          <p class="font-semibold mt-2.5 lg:mt-4 lg:text-2xl">689₽</p>
+          <h3 class="text-xs mt-1 lg:mt-2 lg:text-base">Мясная бомба</h3>
+          <p class="text-xs lg:text-base font-semibold text-greyColor mt-4 lg:mt-7">520г</p>
+          <button class="text-xs lg:text-base w-full py-2.5 lg:py-3 rounded-lg my-2 bg-btnColor hover:bg-bgColor active:bg-btnAccenrtColor focus:border-btnColor">Добавить</button>
+        </div>
+        <div class="bg-white rounded-xl lg:rounded-2xl p-1 lg:p-3">
+          <img class="w-full h-auto" src="/img/product/burger-classik.jpg" alt="">
+          <p class="font-semibold mt-2.5 lg:mt-4 lg:text-2xl">689₽</p>
+          <h3 class="text-xs mt-1 lg:mt-2 lg:text-base">Мясная бомба</h3>
+          <p class="text-xs lg:text-base font-semibold text-greyColor mt-4 lg:mt-7">520г</p>
+          <button class="text-xs lg:text-base w-full py-2.5 lg:py-3 rounded-lg my-2 bg-btnColor hover:bg-bgColor active:bg-btnAccenrtColor focus:border-btnColor">Добавить</button>
+        </div>
+        <div class="bg-white rounded-xl lg:rounded-2xl p-1 lg:p-3">
+          <img class="w-full h-auto" src="/img/product/burger-classik.jpg" alt="">
+          <p class="font-semibold mt-2.5 lg:mt-4 lg:text-2xl">689₽</p>
+          <h3 class="text-xs mt-1 lg:mt-2 lg:text-base">Мясная бомба</h3>
+          <p class="text-xs lg:text-base font-semibold text-greyColor mt-4 lg:mt-7">520г</p>
+          <button class="text-xs lg:text-base w-full py-2.5 lg:py-3 rounded-lg my-2 bg-btnColor hover:bg-bgColor active:bg-btnAccenrtColor focus:border-btnColor">Добавить</button>
+        </div>
+      </div>
+    </section>
+
+    <!---------- footer ------------>
+    <footer class="bg-white mt-20 lg:mt-24">
+      <div class="px-2.5 md:px-16 py-6 md:py-10 lg:px-8 lg:flex lg:flex-wrap lg:justify-between">
+        <img class="lg:w-[300px]" src="/img/logo.svg" alt="">
+        <div class="md:grid md:grid-cols-2 lg:gap-12">
+          <div>
+            <h2 class="text-lg mt-6 lg:mt-0 lg:text-2xl">Номер для заказа</h2>
+            <div class="mt-2 relative">
+              <a class="pl-7 text-xs lg:text-base" href="tel:+79308333811">+7(930)833-38-11</a>
+              <img class="absolute top-0" src="img/icons/call.svg" alt="">
+            </div>
+          </div>
+          <div class="lg:pr-4">
+            <p class="text-lg mt-6 lg:mt-0 lg:text-2xl">Мы в соцсетях</p>
+            <div class="flex gap-4 mt-2">
+              <a href="">
+                <img src="/img/icons/vk.svg" alt="">
+              </a>
+              <a href="">
+                <img src="/img/icons/telegram.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="mt-6 text-xs lg:w-full">© YouMeal, 2022</p>
+      </div>
+    </footer>
+  </body>
+  <script type="module" src="/main.js"></script>
+</html>
